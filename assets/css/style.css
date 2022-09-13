@@ -1,0 +1,1346 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css");
+@font-face {
+  font-family: aAntaraDistance;
+  src: url("../fonts/aAntaraDistance.ttf");
+}
+.top {
+  margin-top: 200px;
+}
+
+.styledBtn, .viewRoomBtn, .roomsCard .innerRooms .flexLocateBox a.bookNow {
+  line-height: 1;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 149px;
+  height: 40px;
+  transition: all 0.3s ease 0s;
+  background-color: #D54746;
+  border: 4px double rgb(255, 255, 255);
+}
+
+.modal {
+  overflow-y: hidden;
+}
+
+.modal.fade .modal-dialog {
+  transform: scale(0);
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.modal.in .modal-dialog {
+  transform: scale(1);
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+.fades:not(.show) {
+  opacity: 1;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar-toggler .navbar-toggler-icon img {
+  height: 34px;
+  border: 1px solid #938f8f;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-family: 500;
+  font-size: 20px;
+}
+
+ul {
+  margin: 0%;
+}
+ul li {
+  padding: 0%;
+  margin: 0%;
+}
+
+span {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+ul.navbar-nav li.nav-item a {
+  color: white;
+}
+
+.headerSection {
+  position: absolute;
+  width: 100%;
+}
+
+.heroBanner {
+  background-image: url(../images/banner/Homebanner.webp) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 200px;
+  background-blend-mode: overlay;
+  background: rgba(0, 0, 0, 0.4509803922);
+}
+
+.scdMenu {
+  background: #f4f4f4;
+  z-index: 999;
+}
+
+.scdHeader .innerUp svg {
+  color: black !important;
+}
+.scdHeader .innerUp a {
+  color: black !important;
+}
+
+.scdUl ul li a {
+  color: black !important;
+}
+
+.upContent {
+  display: flex;
+  margin: 20px 0 40px 0;
+  justify-content: space-between;
+}
+.upContent .innerUp {
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 0px;
+}
+.upContent .innerUp svg {
+  color: white;
+  margin: 0 10px 0 0px;
+}
+.upContent .innerUp a {
+  color: white;
+}
+.upContent .innerUp a.btns {
+  display: block;
+  color: white;
+  margin: 0 0px 0 40px;
+}
+.upContent .innerUp a.btns:nth-child(1) {
+  border-right: 1px solid white;
+  padding: 0px 40px 0 0px;
+}
+
+.heroContent {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroContent .innerContent h4 {
+  color: white;
+  font-family: aAntaraDistance;
+  font-size: 100px;
+}
+.heroContent .innerContent h6 {
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: capitalize;
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.bayBtn {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 16px 40px;
+  text-transform: capitalize;
+}
+
+.bayBtnTwo {
+  background: white;
+  color: black;
+  padding: 16px 40px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.selectedContainer {
+  width: 90%;
+}
+
+.selectionBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.selectionBox .innerselectionBox {
+  background: white;
+  padding: 20px;
+  width: 24%;
+  border-radius: 10px;
+}
+.selectionBox .innerselectionBox label {
+  color: grey;
+}
+.selectionBox .innerselectionBox .selectTag {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.selectionBox .innerselectionBox .selectTag::after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: white;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.selectionBox .innerselectionBox .selectTag:hover::after {
+  color: grey;
+}
+.selectionBox .innerselectionBox select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  flex: 1;
+  cursor: pointer;
+}
+.selectionBox .innerselectionBox select::-ms-expand {
+  display: none;
+}
+.selectionBox .innerselectionBox:nth-child(5) {
+  width: 100%;
+  background: transparent;
+}
+.selectionBox .innerselectionBox:nth-child(5) a.searchBtn {
+  color: white;
+  border: 1px solid white;
+  letter-spacing: 2px;
+  line-height: 86px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  background: transparent;
+  width: 20%;
+  border-radius: 10px;
+}
+
+.aboutSec {
+  position: relative;
+}
+.aboutSec img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.aboutSec .aboutRightImg {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+.aboutSec .aboutRightImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 300px;
+}
+
+.aboutTxt {
+  padding: 118px 0;
+}
+.aboutTxt h4 {
+  font-family: aAntaraDistance;
+  text-align: center;
+  font-size: 55px;
+  margin: 25px 0;
+}
+.aboutTxt h5 {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+.aboutTxt p {
+  text-align: center;
+  font-weight: 300;
+}
+.aboutTxt a {
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.roomsSec {
+  background: #f4f4f4;
+  padding-bottom: 100px;
+}
+
+.roomsHead {
+  font-family: aAntaraDistance;
+  text-align: center;
+  font-size: 50px;
+}
+
+.roomsPrah {
+  font-weight: 300;
+  text-align: center;
+}
+
+.roomsCard {
+  background: white;
+  position: relative;
+  box-shadow: -1px 10px 10px rgba(128, 128, 128, 0.631372549);
+  border-radius: 20px;
+}
+.roomsCard .discountBox {
+  position: absolute;
+  right: 25px;
+  background: #D54746;
+  top: 23px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.roomsCard .discountBox span {
+  color: white;
+  text-transform: uppercase;
+}
+.roomsCard img.roomsImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+.roomsCard .roomsFlex {
+  background: black;
+  color: white;
+  display: flex;
+  position: absolute;
+  width: 50%;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  border-radius: 8px;
+  top: 40%;
+  left: 3%;
+}
+.roomsCard .roomsFlex span {
+  display: block;
+}
+.roomsCard .roomsFlex a {
+  display: block;
+  color: white;
+}
+.roomsCard .innerRooms {
+  padding: 40px 20px;
+}
+.roomsCard .innerRooms h4 {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.roomsCard .innerRooms .iconFlex {
+  display: flex;
+}
+.roomsCard .innerRooms .iconFlex h5 {
+  margin-top: 10px;
+}
+.roomsCard .innerRooms .iconFlex h5 img.iconsRoom {
+  height: 30px;
+}
+.roomsCard .innerRooms .iconFlex h5 span {
+  font-size: 15px;
+  color: grey;
+}
+.roomsCard .innerRooms .iconFlex h5 span.guestHead {
+  font-size: 18px;
+}
+.roomsCard .innerRooms .iconFlex h5:nth-child(2) {
+  margin-left: 20px;
+}
+.roomsCard .innerRooms .flexLocateBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 10px 0 0 0;
+}
+.roomsCard .innerRooms .flexLocateBox a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.roomsCard .innerRooms .flexLocateBox a svg {
+  font-size: 15px;
+  padding-right: 10px;
+}
+.roomsCard .innerRooms .flexLocateBox a.locateBtn {
+  color: gray;
+}
+.viewRoomBtn {
+  width: 25% !important;
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 49px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.viewRoomBtn:hover {
+  color: white;
+}
+.viewRoomBtn svg {
+  margin-left: 10px;
+}
+
+.resortHead {
+  font-size: 50px;
+  font-family: aAntaraDistance;
+  text-align: center;
+}
+
+.resortPrah {
+  font-weight: 300;
+  padding: 0 280px;
+  text-align: center;
+}
+
+.resortIconsBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.resortIconsBox h5 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 30px;
+}
+.resortIconsBox h5 img.resortIcons {
+  height: 80px;
+  display: block;
+  margin: auto;
+}
+.resortIconsBox h5 a.des {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.resortIconsBox h5 a.des:hover {
+  text-decoration: underline;
+}
+
+.secVideos {
+  width: 100%;
+}
+
+.testimonialsBg {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+.testimonialsBg .testiHead {
+  text-align: center;
+  font-family: aAntaraDistance;
+  font-size: 50px;
+}
+.testimonialsBg .testiPrah {
+  font-weight: 300;
+  text-align: center;
+  padding: 20px 300px;
+}
+
+.testiSlider .innerContentBox {
+  display: flex;
+  background: white;
+}
+
+.testiSlider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.testiSlider .slick-track {
+  display: flex;
+}
+.testiSlider .slick-list {
+  padding: 0% !important;
+}
+.testiSlider .innerContentBox {
+  background: white;
+  margin: 0 0px 0 20px;
+  padding: 30px;
+  border-radius: 0 50px 0 50px;
+}
+.testiSlider p.cosReview {
+  padding: 27px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.testiSlider .cosName,
+.testiSlider .cosCom {
+  padding-left: 27px;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.footerBg {
+  background: black;
+  padding: 80px 0 0 0px;
+  border-radius: 30px;
+  width: 85%;
+}
+
+.footerContent h4.linksHead {
+  color: white;
+  text-transform: uppercase;
+}
+.footerContent ul.socialLinks {
+  display: flex;
+  padding: 0;
+  margin-top: 40px;
+}
+.footerContent ul.socialLinks li {
+  list-style: none;
+  padding: 0 0 0 20px;
+}
+.footerContent ul.socialLinks li a svg {
+  color: white;
+  font-size: 25px;
+}
+.footerContent ul.scdLinks {
+  display: flex;
+  flex-direction: column;
+}
+.footerContent ul.scdLinks li {
+  padding: 0%;
+}
+.footerContent ul.scdLinks li a {
+  color: white;
+  line-height: 35px;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.footerContent ul.scdLinks li img {
+  margin-top: 15px;
+  display: block;
+  height: 75px;
+}
+
+.bottomBg {
+  background: #241e1e;
+  margin: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 17px 0 0 0;
+}
+.bottomBg .bottomCol {
+  width: 50%;
+}
+
+.bottomLinks {
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 30px 30px;
+  padding: 0;
+}
+.bottomLinks li {
+  list-style: none;
+  line-height: 23px;
+  margin: 0px 5px 0 10px;
+  text-align: center;
+}
+.bottomLinks li a {
+  color: white;
+}
+
+.copyRights {
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.roomZoom {
+  position: relative;
+  overflow: hidden;
+  margin: 210px 0 0 0;
+}
+.roomZoom:hover {
+  cursor: pointer;
+}
+.roomZoom:hover .roomsDetailsBox {
+  transition: 0.3s;
+  transform: scale(1.1);
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.roomDeatilsCol {
+  position: relative;
+}
+
+.titles {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 28%;
+  z-index: 2;
+  width: 50%;
+}
+.titles .roomTitles {
+  position: relative;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 11px;
+}
+.titles .roomTitles .innerTitle {
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.titles .roomTitles.titleOne .innerTitle {
+  color: green;
+}
+.titles .roomTitles.titleTwo .innerTitle {
+  color: blue;
+}
+.titles .roomTitles.titleThree .innerTitle {
+  color: grey;
+}
+
+.saveShare {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 28%;
+  z-index: 2;
+  right: 0;
+  width: 28%;
+}
+.saveShare:hover {
+  cursor: pointer;
+}
+.saveShare .saveShareicons {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: white;
+}
+.saveShare .saveShareicons img {
+  height: 25px;
+  filter: invert(49%) sepia(14%) saturate(2688%) hue-rotate(315deg) brightness(84%) contrast(99%);
+}
+.saveShare .saveShareicons a {
+  display: inline-block;
+  font-size: 17px;
+}
+
+.roomsDetailsBox {
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.4784313725);
+  transition: 0.3s;
+  height: 600px;
+}
+.roomsDetailsBox .bigImg {
+  width: 100%;
+  height: 600px;
+}
+.roomsDetailsBox .bigImg img.bigImage {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 600px;
+}
+.roomsDetailsBox .smallImg {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.roomsDetailsBox .smallImg img.smallImage {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.roomsDetailsBox .smallImg img.smallImage:nth-child(2) {
+  padding-top: 10px;
+}
+
+.roomInfo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.roomInfo .romInnerInfo {
+  width: 50%;
+}
+.roomInfo .romInnerInfo h5 {
+  color: grey;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.roomInfo .romInnerInfo h6.romInnerFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.roomInfo .romInnerInfo h6.romInnerFlex span {
+  color: grey;
+  font-size: 15px;
+  display: block;
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.roomInfo .romInnerInfo h6.romInnerFlex a {
+  color: grey;
+  font-size: 15px;
+  display: block;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.roomInfo .romInnerInfo h6.romInnerFlex a:hover {
+  text-decoration: underline;
+}
+.roomInfo .romInnerInfo h6.romInnerFlex .innerIcons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.roomInfo .romInnerInfo h6.romInnerFlex .innerIcons img {
+  height: 20px;
+  margin-right: 10px;
+}
+.roomInfo .romInnerInfo h6.romInnerFlex .innerIcons span {
+  color: black;
+  font-size: 15px;
+  display: block;
+  font-weight: 200;
+}
+
+.applyBox .pricePerMon {
+  font-size: 25px;
+}
+.applyBox span {
+  display: block;
+  color: gray;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.applyBox button.applyBtn {
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  color: white;
+  background: #D54746;
+  transition: 1s;
+}
+.applyBox button.applyBtn:hover {
+  background: black;
+}
+
+.bookinBox {
+  border: 1px solid rgba(128, 128, 128, 0.2588235294);
+  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.1882352941);
+  border-radius: 10px;
+  padding: 28px 15px;
+}
+.bookinBox h6 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.bookinBox h5 {
+  margin-top: 15px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.bookinBox .formFlex {
+  display: flex;
+}
+.bookinBox .formFlex input {
+  height: 50px;
+}
+.bookinBox .formFlex input:focus {
+  border: #D54746;
+  box-shadow: 0 0 0 0.25rem rgba(213, 71, 70, 0.6);
+}
+.bookinBox .formFlex input:nth-child(2) {
+  margin-left: 25px;
+}
+.bookinBox .formFlex textarea:focus {
+  border: #D54746;
+  box-shadow: 0 0 0 0.25rem rgba(213, 71, 70, 0.6);
+}
+.bookinBox .labels {
+  font-size: 13px;
+  color: gray;
+}
+.bookinBox .availBtn {
+  background: #D54746;
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 40px 0 15px 0;
+  padding: 15px 0;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: 1s;
+}
+.bookinBox .availBtn:hover {
+  background: black;
+}
+.bookinBox .policyTxt {
+  text-transform: capitalize;
+  color: gray;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.mapsInfo {
+  margin-top: 50px;
+}
+.mapsInfo .mapLocal {
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.mapsInfo ul.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  border-bottom: none;
+}
+.mapsInfo ul.nav-tabs li a.active {
+  color: #D54746;
+  border: 1px solid rgba(129, 125, 125, 0.2901960784);
+  padding: 10px 30px;
+  border-radius: 9px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.1411764706);
+}
+.mapsInfo .tab-content {
+  margin-top: 20px;
+}
+.mapsInfo .tab-content .googleMaps {
+  width: 100%;
+}
+.mapsInfo .tab-content .googleMaps iframe {
+  width: 91%;
+  height: 300px;
+}
+
+.desBox {
+  margin-top: 35px;
+}
+.desBox .desHead {
+  margin-top: 15px;
+}
+.desBox .desPhone {
+  color: #D54746;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 25px;
+}
+.desBox p.desExplaine {
+  color: gray;
+  font-weight: 200;
+}
+
+.homeHighlights {
+  border: 1px solid #dee2e6;
+  padding: 0 20px 20px 20px;
+  border-radius: 15px;
+}
+.homeHighlights h5.highlightsHead {
+  margin: 30px 0;
+}
+.homeHighlights .flexHighlights {
+  display: flex;
+  justify-content: space-between;
+}
+.homeHighlights .flexHighlights .innerhlights h6 img {
+  height: 25px;
+  margin-right: 10px;
+}
+.homeHighlights .flexHighlights .innerhlights h6 span {
+  font-weight: 400;
+  color: gray;
+  font-size: 15px;
+}
+.homeHighlights .scdHlights h6 span {
+  font-weight: 600 !important;
+  color: black !important;
+}
+
+.interiorBox {
+  margin-top: 40px;
+}
+.interiorBox .interiorTopHead {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 12px 13px;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  margin: 0;
+}
+.interiorBox .interiorTopHead img {
+  height: 25px;
+}
+.interiorBox .interiorTopHead span {
+  font-size: 18px;
+  padding-top: 10px;
+  margin-left: 17px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.interiorBox .interiorTable {
+  width: 100%;
+}
+.interiorBox .interiorTable tr {
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+}
+.interiorBox .interiorTable tr td {
+  padding: 15px 25px;
+}
+.interiorBox .interiorTable tr h4 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.interiorBox .interiorTable tr .upBox {
+  display: flex;
+  width: 100%;
+}
+.interiorBox .interiorTable tr .upBox li {
+  width: 33%;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: gray;
+}
+.interiorBox .seeAllBtn {
+  display: inline-flex;
+  padding: 6px 15px;
+  border: 1px solid rgba(128, 128, 128, 0.2784313725);
+  margin-top: 12px;
+  box-shadow: 5px 3px 10px rgba(128, 128, 128, 0.2509803922);
+}
+.interiorBox .seeAllBtn:hover {
+  cursor: pointer;
+}
+
+.roomCardSlider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 55px 0px;
+}
+.roomCardSlider .slick-track {
+  display: flex;
+}
+.roomCardSlider .slick-prev:before, .roomCardSlider .slick-next:before {
+  color: black;
+  font-size: 30px;
+}
+.roomCardSlider .slick-next:before {
+  content: "➜";
+}
+.roomCardSlider .slick-next {
+  right: 25px;
+  z-index: 22;
+}
+.roomCardSlider .slick-prev:before {
+  content: "➜";
+  transform: rotate(180deg);
+  position: inherit;
+}
+.roomCardSlider .slick-prev {
+  left: 20px;
+  z-index: 22;
+}
+.roomCardSlider .slick-prev, .roomCardSlider .slick-next {
+  top: 41%;
+}
+.roomCardSlider .roomsCard {
+  background: white;
+  position: relative;
+  box-shadow: -1px 10px 10px rgba(128, 128, 128, 0.631372549);
+  border-radius: 20px;
+  margin: 0 0 0 18px;
+}
+.roomCardSlider .roomsCard a {
+  display: block;
+}
+.roomCardSlider .roomsCard .displayBox {
+  position: absolute;
+  left: 25px;
+  background: white;
+  top: 23px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.roomCardSlider .roomsCard .displayBox span {
+  color: #D54746;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.roomCardSlider .roomsCard .heartBox {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+}
+.roomCardSlider .roomsCard .heartBox img {
+  height: 35px;
+}
+.roomCardSlider .roomsCard img.roomsImg {
+  width: 100%;
+}
+.roomCardSlider .innerRooms {
+  padding: 0px 20px;
+}
+.roomCardSlider .innerRooms h4 {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.roomCardSlider .innerRooms .iconFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.roomCardSlider .innerRooms .iconFlex h5 {
+  margin-top: 10px;
+}
+.roomCardSlider .innerRooms .iconFlex h5 img.iconsRoom {
+  height: 20px;
+}
+.roomCardSlider .innerRooms .iconFlex h5 span {
+  font-size: 12px;
+  color: grey;
+}
+.roomCardSlider .innerRooms .iconFlex h5 span.guestHead {
+  font-size: 12px;
+}
+.roomCardSlider .innerRooms .iconFlex h5:nth-child(2) {
+  margin-left: 20px;
+}
+.roomCardSlider .innerRooms a {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.roomCardSlider .innerRooms a svg {
+  font-size: 15px;
+  padding-left: 10px;
+}
+.roomCardSlider .innerRooms p {
+  font-weight: 300;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.popupDailog {
+  height: 85%;
+  width: 90%;
+  max-width: unset !important;
+  margin: 69px auto;
+  padding: 0;
+}
+.popupDailog .modal-content {
+  height: 100%;
+  overflow: hidden;
+}
+.popupDailog .modal-content .close {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  background: transparent;
+  font-size: 40px;
+  color: #605d5d;
+  z-index: 2;
+}
+
+.modalTab .oneUl {
+  justify-content: space-between;
+}
+.modalTab .oneUl .twoUl {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.modalTab .oneUl .twoUl li a {
+  padding: 10px 20px;
+  color: #605d5d;
+}
+.modalTab .oneUl .twoUl li a.active {
+  border: 1px solid rgba(129, 125, 125, 0.2901960784);
+  color: #D54746;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.1411764706);
+}
+.modalTab .oneUl .modalBtns {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+.modalTab .oneUl .modalBtns h5 {
+  display: flex;
+  background: white;
+  padding: 10px 20px;
+  width: 112px;
+  border: 1px solid rgba(128, 128, 128, 0.2588235294);
+  border-radius: 10px;
+}
+.modalTab .oneUl .modalBtns h5:hover {
+  background: rgba(128, 128, 128, 0.1215686275);
+  transition: all 1s linear;
+  cursor: pointer;
+}
+.modalTab .oneUl .modalBtns h5 img {
+  height: 21px;
+  margin-right: 6px;
+}
+.modalTab .oneUl .modalBtns h5 span {
+  display: block;
+  color: #605d5d;
+  font-size: 16px;
+}
+
+.mainSlider {
+  height: 680px;
+  width: 100%;
+  overflow: hidden;
+}
+.mainSlider .slick-prev, .mainSlider .slick-next {
+  display: none !important;
+}
+.mainSlider .mainFlex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+}
+.mainSlider .mainFlex .flexThree3 {
+  width: 100%;
+}
+.mainSlider .mainFlex .flexThree3 .innerFlex {
+  display: flex;
+  width: 100%;
+}
+.mainSlider .mainFlex .flexThree3 .innerFlex .fancyBox {
+  width: 100%;
+  padding: 6px 4px;
+}
+.mainSlider .mainFlex .flexThree3 .innerFlex .fancyBox img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.tabMap .googleMaps {
+  height: 100vh;
+}
+.tabMap .googleMaps iframe {
+  width: 100%;
+  height: 75%;
+}
+
+.resortsBanner {
+  background-image: url(../images/banner/resortsLocate.webp) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center !important;
+  height: 650px;
+  width: 100%;
+  overflow: hidden;
+  background-blend-mode: overlay;
+  background: rgba(0, 0, 0, 0.4509803922);
+  display: flex;
+  align-items: center;
+}
+
+.resortsBoxUp {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.resortsBoxUp .contentResort h4 {
+  color: white;
+  font-family: aAntaraDistance;
+  font-size: 100px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.resortsBoxUp .contentResort p {
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 40px;
+}
+
+.exitsBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.exitsBox .exitsLocateTag {
+  text-transform: capitalize;
+  position: relative;
+  font-size: 30px;
+}
+
+.resortsSort {
+  display: flex;
+  justify-content: end;
+}
+.resortsSort .sortBorder {
+  border: 5px solid #eaeaea;
+  border-radius: 100px;
+  padding: 4px 6px;
+  box-shadow: inset 10px 10px 10px #dee2e6;
+}
+.resortsSort .innerSorts {
+  border: 1px solid #adb5bd;
+  padding: 11px 14px;
+  border-radius: 100px;
+  font-size: 14px;
+}
+.resortsSort .innerSorts:focus {
+  outline: none;
+}
+.resortsSort .innerSorts option {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.marignItems {
+  margin-top: 20px;
+}
+
+.resortsItem {
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #dee2e6;
+  padding: 10px;
+  border-radius: 10px;
+}
+.resortsItem .innerUpdatedTags {
+  display: flex;
+  justify-content: start;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.resortsItem .innerUpdatedTags h6 {
+  display: block;
+  background: white;
+  color: black;
+  margin: 0 7px 0 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 4px 6px;
+  line-height: normal;
+}
+.resortsItem img.demoImg {
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.resortsItem .innerItem {
+  margin-top: 8px;
+  border-top: 1px solid #dee2e6;
+  padding: 15px 0 0 0;
+}
+.resortsItem .innerItem .priceList {
+  font-size: 18px;
+}
+.resortsItem .innerItem .innerOptions {
+  display: flex;
+  justify-content: space-between;
+}
+.resortsItem .innerItem .innerOptions h5 img {
+  height: 15px;
+}
+.resortsItem .innerItem .innerOptions h5 span {
+  font-size: 15px;
+  font-weight: 300;
+}
+.resortsItem .innerItem .addressList {
+  font-size: 17px;
+  margin-top: 2px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */

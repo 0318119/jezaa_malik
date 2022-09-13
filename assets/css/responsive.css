@@ -1,0 +1,453 @@
+@media screen and (max-width: 1671px) {
+  .modalTab .oneUl .modalBtns {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .roomsCard .discountBox {
+    width: 40%;
+  }
+  .roomsCard .roomsFlex {
+    width: 80%;
+    top: 34%;
+  }
+  .roomsCard .innerRooms .iconFlex h5 span.guestHead {
+    font-size: 14px;
+  }
+  .modalTab .oneUl .modalBtns {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .modalTab .oneUl {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .modalTab .oneUl .modalBtns {
+    align-items: center;
+    margin-right: 0px;
+  }
+  .modalTab .oneUl .modalBtns h5 {
+    border: none;
+    width: auto;
+  }
+  .modalTab .oneUl .modalBtns h5 img {
+    height: 30px;
+    margin-right: 0px;
+  }
+  .modalTab .oneUl .modalBtns h5 span {
+    display: none;
+  }
+  .modalTab .twoUl {
+    width: 40%;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    margin: 6px 8px;
+  }
+  .modalTab .twoUl > li {
+    white-space: nowrap;
+    margin: 19px 15px;
+  }
+  .popupDailog .modal-content .close {
+    top: -16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .heroContent .innerContent h4 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .selectionBox {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .selectionBox .innerselectionBox {
+    width: 30%;
+    margin: 5px 0;
+  }
+  .aboutTxt {
+    padding: 20px 0;
+  }
+  .roomsCol {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .footerBg {
+    border-radius: 0;
+    width: 100%;
+    overflow-x: clip;
+  }
+  .footerCol {
+    width: 47%;
+  }
+  .footerCols {
+    width: 95%;
+  }
+  .resortPrah {
+    padding: 0 0;
+  }
+  .testimonialsBg .testiPrah {
+    padding: 20px 0;
+  }
+  .bottomCol {
+    width: 50%;
+  }
+  .titles {
+    flex-direction: column;
+    align-items: baseline;
+    align-content: flex-start;
+    width: 50%;
+  }
+  .titles .roomTitles {
+    margin: 5px 15px;
+  }
+  .saveShare {
+    width: 50%;
+  }
+  .roomsDetailsBox {
+    flex-direction: column;
+  }
+  .roomsDetailsBox .bigImg {
+    height: 350px;
+  }
+  .roomsDetailsBox .bigImg img.bigImage {
+    height: 340px;
+  }
+  .roomsDetailsBox .smallImg {
+    flex-direction: row;
+    padding-left: 0px;
+  }
+  .roomsDetailsBox .smallImg img.smallImage {
+    height: 262px;
+  }
+  .roomsDetailsBox .smallImg img.smallImage:nth-child(2) {
+    padding-top: 0px;
+  }
+  .colHighlights {
+    width: 100%;
+  }
+  .colSlider {
+    width: 100%;
+  }
+  .bottomBg .bottomCol {
+    width: 100%;
+  }
+  .copyRights {
+    margin-top: 20px;
+  }
+  .newCollapse {
+    background: #e9ecef;
+    color: black;
+    padding: 20px;
+  }
+  .newCollapse ul.navbar-nav li.nav-item a {
+    color: black;
+  }
+  .bayBtn {
+    border: 1px solid rgba(128, 128, 128, 0.3882352941);
+    color: black;
+  }
+  .selectionBox .innerselectionBox:nth-child(5) {
+    border: 1px solid white;
+    width: auto;
+  }
+  .selectionBox .innerselectionBox:nth-child(5) a.searchBtn {
+    border: none;
+    line-height: 50px;
+    width: 100%;
+    background: transparent;
+    padding: 0 30px;
+  }
+  .viewRoomBtn {
+    width: 70%;
+  }
+  .resortsBoxUp .contentResort p {
+    font-size: 30px;
+  }
+  .marignItems {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .heroContent .innerContent h6 {
+    font-size: 29px;
+    text-align: center;
+  }
+  .upContent .innerUpDiv {
+    flex-wrap: wrap;
+  }
+  .aboutSec .aboutRightImg {
+    right: 0%;
+  }
+  .roomsCol {
+    width: 80%;
+  }
+  .resortIconsBox {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .resortIconsBox h5 img.resortIcons {
+    height: 46px;
+  }
+  .bottomCol {
+    width: 100%;
+  }
+  .copyRights {
+    text-align: center;
+  }
+  .titles {
+    top: 31%;
+  }
+  .saveShare {
+    top: 31%;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: end;
+    right: 22px;
+  }
+  .roomsDetailsBox .bigImg img.bigImage {
+    height: 350px;
+  }
+  .roomsDetailsBox .smallImg img.smallImage {
+    height: 200px;
+  }
+  .homeHighlights .flexHighlights {
+    flex-wrap: wrap;
+  }
+  .interiorBox .interiorTable tr .upBox {
+    flex-direction: column;
+  }
+  .interiorBox .interiorTable tr .upBox li {
+    width: 100%;
+  }
+  .roomCardSlider .innerRooms h4 {
+    font-size: 17px;
+  }
+  .roomCardSlider .innerRooms .iconFlex h5 {
+    margin-top: 0px;
+  }
+  .roomCardSlider .innerRooms .iconFlex h5:nth-child(2) {
+    margin-left: 0px;
+  }
+  .bayBtnTwo {
+    padding: 10px 20px;
+  }
+  .bayBtn {
+    padding: 10px 20px;
+  }
+  .heroContent {
+    height: 245px;
+  }
+  .heroBanner {
+    height: 800px;
+  }
+  .selectionBox .innerselectionBox {
+    width: 45%;
+  }
+  .bottomBg {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalTab .twoUl > li {
+    margin: 19px 3px;
+  }
+  .modalTab .twoUl > li a {
+    padding: 10px 11px;
+  }
+  .resortsItem img.demoImg {
+    height: 160px;
+  }
+  .resortsItem .innerItem .addressList {
+    font-size: 13px;
+  }
+  .exitsBox .exitsLocateTag {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .upContent {
+    margin: 20px auto;
+    width: 80%;
+  }
+  .upContent .innerUpDiv {
+    display: block !important;
+  }
+  .upContent .innerUp {
+    display: block !important;
+    margin: 0;
+  }
+  .upContent .innerUp a.btns:nth-child(1) {
+    border: none;
+    padding: 0%;
+  }
+  .secVideos {
+    height: 322px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .testiSlider .innerContentBox {
+    flex-direction: column;
+  }
+  .testiSlider p.cosReview {
+    padding: 0px;
+  }
+  .testiSlider .cosName, .testiSlider .cosCom {
+    padding-left: 0;
+  }
+  .selectedContainer {
+    width: 100%;
+  }
+  .selectionBox .innerselectionBox {
+    padding: 12px;
+  }
+  .selectionBox .innerselectionBox label {
+    font-size: 15px;
+  }
+  .selectionBox .innerselectionBox .selectTag {
+    font-size: 12px;
+  }
+  .bottomLinks {
+    flex-wrap: wrap;
+  }
+  .filterCols {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .aboutTxt h4 {
+    font-size: 40px;
+    margin: 16px 0;
+  }
+  .roomsCol {
+    width: 95%;
+  }
+  .footerContent h4.linksHead {
+    margin-top: 65px;
+  }
+  .footerContent ul.socialLinks {
+    margin-top: 15px;
+  }
+  .footerCol {
+    width: 80%;
+  }
+  .saveShare {
+    top: 51%;
+    align-items: center;
+    left: 0;
+    right: auto;
+    width: 35%;
+  }
+  .saveShare .saveShareicons {
+    padding: 4px 10px;
+  }
+  .saveShare .saveShareicons img {
+    height: 15px;
+  }
+  .saveShare .saveShareicons a {
+    font-size: 12px;
+  }
+  .roomsDetailsBox .smallImg img.smallImage {
+    height: 170px;
+  }
+  .applyBox .pricePerMon {
+    font-size: 20px;
+  }
+  .applyBox span {
+    margin: 10px 0;
+  }
+  .applyBox button.applyBtn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+  .mapsInfo ul.nav-tabs {
+    justify-content: space-around;
+    width: auto;
+  }
+  .mapsInfo .tab-content .googleMaps iframe {
+    width: 100%;
+  }
+  .bayBtnTwo {
+    width: 50%;
+    margin-top: 15px;
+  }
+  .bayBtn {
+    width: 50%;
+    margin-top: 15px;
+  }
+  .heroContent .innerContent h4 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .heroContent .innerContent h6 {
+    font-size: 22px;
+    white-space: pre-wrap;
+    margin: 0;
+  }
+  .aboutSec img {
+    height: 500px;
+    margin: auto;
+    display: block;
+  }
+  .aboutSec .aboutRightImg img {
+    height: 192px;
+  }
+  .modalTab .oneUl .twoUl {
+    width: 50%;
+  }
+  .modalTab .oneUl .modalBtns h5 img {
+    height: 20px;
+  }
+  .mainSlider {
+    height: 500px;
+  }
+  .popupDailog {
+    height: 100vh;
+    margin: 140px auto;
+  }
+  .modal-content {
+    height: 66% !important;
+  }
+  .viewRoomBtn {
+    width: auto;
+  }
+  .resortsBoxUp .contentResort h4 {
+    font-size: 55px;
+  }
+  .marignItems {
+    width: 80%;
+  }
+  .resortsItem img.demoImg {
+    height: 200px;
+  }
+  .filterCols {
+    width: 80%;
+  }
+  .resortsSort {
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 421px) {
+  .titles {
+    top: 38%;
+  }
+  .saveShare {
+    top: 58%;
+  }
+  .roomsDetailsBox .bigImg {
+    height: 300px;
+  }
+  .roomsDetailsBox .bigImg img.bigImage {
+    height: 300px;
+  }
+  .roomsDetailsBox .smallImg img.smallImage {
+    height: 160px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .marignItems {
+    width: 98%;
+  }
+}/*# sourceMappingURL=responsive.css.map */
